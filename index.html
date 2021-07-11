@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<title>Family Book</title>
+<body>
+<h1>Family Book</h1>
+<hr> <hr>
+<img id="Family_Book" src="download.jpg">
+<h3 id="one">1. Our Family Book</h3>
+<button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "2. My Father (Subhendu Kumar Sahoo)",
+   "3. My Mother (Dolly Sahoo)",
+   "4. Me (Rudraksh Sahoo)"
+   ];
+   var images=[
+   "papa.JPG",
+   "mama.JPG",
+   "Rudraksh.JPG"
+   ];
+   var i=0
+   function family(){
+    document.getElementById("one").innerHTML=names[i]; 
+    document.getElementById("family_img").src=images[i];
+    1++;
+    if(i--4){
+        i=0;
+    }}
+   </script>
+  </body>
+</html>
